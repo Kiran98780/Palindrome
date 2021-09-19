@@ -23,9 +23,9 @@ public class Palindrome
 
         public static void main(String[] args)
         {
-            Scanner myInput = new Scanner(System.in);
+            Scanner user_input = new Scanner(System.in);
             System.out.print( "Enter number: " );
-            int input_number = myInput.nextInt();
+            int input_number = user_input.nextInt();
             while (is_palindrome(input_number) == 0)
                 input_number = input_number + 1; // if not Palindrome increment count of the number
             System.out.println("Next Palindrome is:" + input_number);
