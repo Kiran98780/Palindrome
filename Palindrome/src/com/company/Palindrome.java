@@ -1,5 +1,6 @@
 package com.company;
 import java.io.*;
+import java.util.Scanner;
 
 public class Palindrome
 {
@@ -22,7 +23,9 @@ public class Palindrome
 
         public static void main(String[] args)
         {
-            int input_number = 1234;
+            Scanner myInput = new Scanner(System.in);
+            System.out.print( "Enter number: " );
+            int input_number = myInput.nextInt();
             while (is_palindrome(input_number) == 0)
                 input_number = input_number + 1; // if not Palindrome increment count of the number
             System.out.println("Next Palindrome is:" + input_number);
